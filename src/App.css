@@ -1,32 +1,164 @@
-.App {
-  text-align: center;
+.main {
+  background: #AFD4C0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.headerMain {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: fixed;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 10vh;
+  width: 100vw;
+  background: #509872;
+  top: 0;
+  z-index:999;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.headerImg {
+  margin: auto 2%;
+  height: 40%;
+  width: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  cursor: pointer;
+}
+
+.dashboardDelete {
+  background: none;
+  border: none;
+  font-size: 1em;
+  position: absolute;
+  right: 30vw;
+}
+
+.dashboardMain, .wizardMain {
+  display:flex;
+  flex-direction: column;
+  margin: 10vh 20vw 0 20vw;
+  background: #E5F3EB; 
+  /* height: 100vh; */
+}
+
+.dashboardNav {
+  border-bottom: 2px solid gray;
+  /* background: gray; */
+}
+
+.dashboardNavBtn {
+  background: #8AEA92;
+  height: 7vh;
+  font-size: 1.75em;
+  font-weight: bold;
+  border: none;
+  position: relative;
+  bottom: 3vh;
+  right: 2vw;
+  float: right;
+}
+
+.dashboardNavTitle {
+  height: 0;
+  margin-top: 0;
+  margin-left: 3vw;
+  font-size: 3em;
+}
+
+.listingBox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  /* height: 20vh; */
+  margin: 5%;
+  flex-direction: column;
+  background: #DEDEDE;
+  padding: 2%;
+}
+
+.listingWhole {
+  width: 70%;
+}
+
+.answer {
+  margin-left: 2%;
+}
+
+.listingAns {
+  display:flex;
+  width: 100%;
+  /* margin: 2%; */
+}
+
+.answerTitle {
+  margin: 5%;
+}
+
+.wizardNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+  /* border-bottom: 2px solid gray; */
+}
+
+.wizardCancel {
+  background: #FEC2C2;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  height: 4vh;
+  width: 5vw;
+}
+
+.wizardBody {
+  padding: 3% 10% 2% 10%;
+  height: 69vh;
+}
+
+.wizardText {
+  display: flex;
+}
+
+.wizardInput {
+  height: 2vh;
+  margin: 3%
+}
+
+.wizardNextStep, .wizardNext {
+  background: #3B524A;
+  color: white;
+  border: none;
+  height: 6vh;
+  width: 12vw;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.wizardNextStep {
+  position: absolute;
+  right: 25vw;
+  top: 75vh;
+}
+
+.step2Footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40vh;
+}
+
+.listingImg {
+  float: left;
+  width: 80%;
+  height: 80%;
+}
+
+.wizard2Main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 0 20vw;
+  padding: 4%;
+  margin-top: 10vh;
+  height: 75vh;
+  background: #E5F3EB;
+  width: 50vw;
 }
