@@ -32,7 +32,7 @@ button:hover {
   right: 30vw;
 }
 
-.dashboardMain, .wizardMain {
+.dashboardMain {
   display:flex;
   flex-direction: column;
   margin: 10vh 20vw 0 20vw;
@@ -123,6 +123,15 @@ button:hover {
   margin: 3%
 }
 
+.step3Complete {
+  background: #8AEA92;
+  border: none;
+  height: 6vh;
+  width: 12vw;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
 .wizardNextStep, .wizardNext {
   background: #3B524A;
   color: white;
@@ -135,14 +144,14 @@ button:hover {
 
 .wizardNextStep {
   position: absolute;
-  right: 25vw;
+  right: 30vw;
   top: 75vh;
 }
 
 .step2Footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 40vh;
+  margin-top: 50vh;
 }
 
 .listingImg {
@@ -151,14 +160,57 @@ button:hover {
   height: 80%;
 }
 
-.wizard2Main {
+.wizard2Main, .step3Main, .wizardMain {
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin: 0 20vw;
+  margin: 0 25vw;
   padding: 4%;
-  margin-top: 10vh;
-  height: 75vh;
+  margin-top: 1vh;
+  height: 84vh;
   background: #E5F3EB;
-  width: 50vw;
+  width: 42vw;
+}
+
+.wizard2Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.wizard2Title {
+  font-size: 2em;
+}
+
+.step2Main {
+  display:flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: 5vh 5vh;
+  width: 90%;
+}
+
+.step2Input, .step3Input {
+  border: 1px solid #509872;
+  height: 3vh;
+}
+
+.step3Body {
+  margin: auto auto auto 4vw;
+}
+
+.step3Input{
+  width: 30vw;
+}
+
+.step3Main {
+  margin-top: 3vh;
+  height: 82vh;
+}
+
+.houseMain {
+  margin: auto;
+  height: 70%;
+  width: 80%;
 }

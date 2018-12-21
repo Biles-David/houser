@@ -7,7 +7,7 @@ class House extends Component {
     let i = this.props.match.params.id
     let { listings } = this.props
     return (
-      <div>
+      <div className="houseMain">
         {console.log(this.props.match)}
         <img className='listingImg' src={listings[i].img}/>        
         <div className='listingWhole'>
